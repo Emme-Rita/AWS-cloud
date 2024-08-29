@@ -1,0 +1,127 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 90px 200px 15px;
+}
+.about h1{
+    text-align: center;
+    font-size:69px ;   
+}
+.team h2{
+    text-align: center;
+}
+.team p{
+    text-align: center;
+}
+.img{
+    display: flex;
+    gap: 20px;
+}
+.img p{
+    margin: 70px 0;
+}
+.sponsor{
+   margin: 20px 150px;
+
+}
+.sponsor h2{
+    text-align: center;
+}
+.sponsor p{
+    text-align: center;
+}
+.sponsor_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form{
+    width: Fixed (539px)px;
+    height: Fixed (443px)px;
+    padding: 0px 48px 0px 48px;
+    gap: 16px;
+    border-radius: 32px 0px 0px 0px;
+    opacity: 0px;
+
+}
+.form input{
+    border-radius: 20px;
+    padding:10px;
+    margin: 10px 0;
+    width: 100%;
+    border: solid;
+}
+.form button{
+    border: none;
+    background: #232F3E;
+    color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.swiper{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+}
+.swiper-slide{   
+    background: #EDEDED;
+    width: 300px;
+    height: Hug (174px)px;
+    padding: 28px 20px 28px 20px;
+    /* gap: 10px; */
+    border-radius: 38px;
+}
+
+.swiper-slide span{
+    display: flex;
+    gap: 10px;
+    color: var(--Orange, #FF9900);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+.ellipse{
+    background: var(--Orange, #FF9900);
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+
+}
+
+
+@media(max-width:768px){
+    .about{
+        width: 100vw;
+        margin: 90px 20px 15px 0;
+    }
+    .img{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .img img{
+        width: 100%;
+    }
+    .sponsor{
+        margin: 0;
+        /* width: 100vw; */
+    }
+    .sponsor_form{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .sponsor_form img{
+        width: 90%;
+    }
+
+    }

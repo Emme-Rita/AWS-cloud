@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+}
+#active{
+    color: #FF9900;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: var(--Faint-Blue, #232F3E);
+    position: fixed;
+    top: 0;
+    width: 100%;  
+    height: 70px;  
+    padding: 0 70px;
+}
+.logo{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    width: 157px;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger span{
+    background:white;
+    margin: 4px;
+    width: 25px;
+    height: 3px;
+}
+
+.nav_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+.nav_link a{
+    color: white;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.nav_link li button{
+    border-radius: 20px;
+    background: #FF9900;
+    padding: 10px;
+    border: none;
+}
+.nav_link li button a{
+    color: black;
+}
+.club{
+    text-align: center;
+
+}
+
+.club h1{
+   /* margin: 100px 170px; */
+   /* margin: 110px 100px 50px; */
+   font-size: 66px;
+   font-weight: 700;
+   line-height: 60px;
+   max-width: 1052px;
+   margin:120px auto 15px auto;  
+}   
+.club p{
+    /* font-size: 20px; */
+    max-width: 766px;
+    margin: auto;
+    /* font-family: Amazon Ember Display; */
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.73px;
+    text-align: center;
+ 
+}
+.club button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #232F3E;
+    border: none;
+    color: white;
+    margin: 15px 400px; 
+    
+}
+
+.flyer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 200px;
+    border: 1px solid;
+    border-radius: 33px;
+    background: var(--Grey, #D4DADA);
+
+}
+.flyer .rsvp{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: left;
+    
+}
+.flyer .rsvp p{
+    font-size: 20px;
+    margin: 30px 0;
+}
+.flyer .rsvp button{
+    border: none;
+    border-radius: 20px;
+    background-color: #FF9900;
+    width: 7rem;
+    padding: 10px;
+
+}
+.next_event {
+    margin: 40px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.next_event .time{
+    display: flex;
+    gap: 40px;
+    font-size: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #232F3E;
+}
+.next_event .time span{
+    color: #FF9900;
+}
+.event{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: cener
+    
+}
+.event_title{
+    width:30% ;
+    background: var(--Greyed-Out, #EDEDED);
+    border-radius: 20px;
+    padding: 20px;
+}
+.event_date{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    background: var(--Greyed-Out, #EDEDED);
+    border-radius: 20px;
+    padding: 20px;
+}
+.event_date span{
+    font-size: 100px;
+    color: #FF9900;
+}
+.event_date .year{
+    font-size: 24px;
+    font-weight: bold;
+    color: #232F3E;
+}
+.next_event button{
+    margin-top: 20px;
+    padding: 10px 100px ;
+    border-radius: 20px;
+    background: #232F3E;
+    border: none;
+    color: white;
+
+}
+.past_event h5{
+    text-align: center;
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;  
+    margin: 20px 0 40px; 
+}
+.container div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px 80px;    
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #D9D9D9;
+   padding: 100px 50px 20px;
+}
+.contact p{
+    margin-top: 25px;
+}
+.copy_right{
+    width: 100%;
+    background: #232F3E;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}
+.links li {
+    list-style: none;
+    line-height: 20px;
+    }
+
+.links li a{
+    color: #232F3E;
+}
+.social_media li{
+    list-style: none;
+    line-height: 20px;
+}
+.social_media li a{
+    color: #232F3E;
+}
+.subscribe{
+    width: 220px;
+}
+.subscribe p{
+    line-height: 21px;
+}
+.subscribe #form{
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid;
+    width: 100%;
+}
+.subscribe button{
+    background: #232F3E;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 9px;
+}
+
+
+@media(max-width:768px) {
+     nav{
+        width: 100vw;
+        padding: 15px;
+        margin: 0;
+     }
+     .logo{
+        width: 20%;
+     }
+     .logo h2{
+        font-size: 10px;
+     }
+    .nav_link {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        background-color: #232F3E;
+        width: 100%;
+    }
+    .nav_link li{
+        text-align: center;
+        
+    }
+    .hamburger{
+        display: flex;
+    }
+    .main{
+        width: 100vw;
+    }
+    .club{
+        margin: 0;
+        font-size: 10px; 
+        padding: 15px;
+     }
+     .club h1{
+        font-size: 40px;
+        margin: 80px 0 20px 0;
+        /* width: 100%; */
+     }
+
+     .club p{
+        width: 100%;
+     }
+
+     .club button{
+        margin: 15px 90px; 
+     }
+    .flyer{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .flyer img{
+        width: 100%;
+        height: 300px;
+    }
+    .next_event {
+        margin: 40px 20px;    
+    }
+    .next_event .time{
+        font-size: 50px;
+    }
+    .event{
+       flex-direction: column;
+    }
+    .event_title{
+        width: 100%;
+        padding: 40px;
+    }
+    .event_date{
+        width: 100%;
+        padding: 40px;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        background-color: #232F3E;
+    }
+    .container div{
+        margin: 5px 0;
+    }
+    .past_event{
+        width: 100%;
+    }
+    .container div{
+        flex-direction: column;
+    }
+    .container div img{
+        width: 100%;
+        
+    }
+    .foot{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-right: 0px;
+        width: 100vw;
+    }
+
+.nav_link.active {
+    display: flex;   
+}
+
+.hamburger.active span{
+    display: none;   
+}
+.hamburger.active::before{
+    content: "X";
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    color: #D4DADA;
+}
+}
